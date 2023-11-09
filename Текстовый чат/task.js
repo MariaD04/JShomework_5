@@ -46,7 +46,6 @@ document.addEventListener('keydown', (event) => {
         document.getElementById('chat-widget__input').value = "";
     } 
     
-    
 })
 
 
