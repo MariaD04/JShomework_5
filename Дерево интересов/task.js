@@ -8,7 +8,6 @@ interests.forEach(element => {
         childCheckbox.forEach(checkbox => {
             checkbox.checked = mainCheckbox.checked;
         })
-    })
-    
+    })  
 });
 
