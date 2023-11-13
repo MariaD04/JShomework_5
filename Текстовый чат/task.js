@@ -32,8 +32,8 @@ document.addEventListener('keydown', (event) => {
 
         let clientMessage = (document.getElementById('chat-widget__input')).value;
         let today = new Date();
-        
-        messages.innerHTML += `
+        if (clientMessage != '') {
+            messages.innerHTML += `
             <div class="message message_client">
                 <div class="message__time">${today.getHours()}:${today.getMinutes()}</div>
                 <div class="message__text">
@@ -44,8 +44,10 @@ document.addEventListener('keydown', (event) => {
 
         robotMessage();
         document.getElementById('chat-widget__input').value = "";
-    } 
-    
+
+        }
+    }        
 })
+
 
 
